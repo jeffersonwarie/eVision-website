@@ -69,6 +69,15 @@ const publications = [
             'https://american-cse.org/csci2022-ieee/pdfs/CSCI2022-2lPzsUSRQukMlxf8K2x89I/202800b671/202800b671.pdf',
         authors: 'Juan Zuluaga, Michael Castillo, Divya Syal, Andres Calle, Navid Shaghaghi',
         year: '2022',
+    },
+    {
+        title: 'Data gap/outlier correction and treatment',
+        text:
+            'The prevalence of gaps and outliers within datasets presents substantial challenges, particularly in the realm of time series fore-casting and various other predictive machine learning (ML) tasks. This paper, introduces an effective technique for correcting gaps and outliers in data and validates the approach by applying it to datasets with outlier zones drawn from three diverse contexts. This innovative technique holds promising potential to enhance the performance of machine learning models by treating the data to alleviate the complications posed by these issues and in doing so contributes a valuable tool to the data science toolbox.',
+        link:
+            'https://pubs.aip.org/aip/acp/article/3034/1/100003/3268599',
+        authors: 'Juan Zuluaga, Michael Castillo, Divya Syal, Andres Calle, Navid Shaghaghi',
+        year: '2024'
     }
 ];
 
@@ -78,29 +87,29 @@ const teamMembers = [
         name: 'Navid Shaghaghi',
         role: 'Professor, department of Mathematics and Computer Science',
         content: 'Navid Shaghaghi is a lecturer and researcher in the department of Mathematics and Computer Science (MCS) of the College of Arts and Sciences and the departments of Computer Science & Engineering (CSEN) and Bioenginneering (BIOE) of the School of Engineering. He also teaches a couple of courses in the department of Information Systems and Analytics (ISA) of the School of Business at Santa Clara University.',
-        avatar: 'assets/Navid-Shaghaghi.jpg'
+        avatar: 'assets/Navid-Shaghaghi.jpg',
+        linkedin: ''
     },
     {
         name: 'Kaushil Kundalia',
         role: 'MS in Computer Science',
-        content:
-            'I am a grad CS student. I love to build backend applications and I mostly look after the engineering side of things.',
-        avatar:
-            'assets/kaushil.jpg'
+        content: 'I am a grad CS student. I love to build backend applications and I mostly look after the engineering side of things.',
+        avatar: 'assets/kaushil.jpg',
+        linkedin: 'https://www.linkedin.com/in/kaushil-kundalia-5b4772149'
     },
     {
         name: 'Juan Zuluaga',
         role: 'MS Computer Science and Engineering',
         content: '',
-        avatar:
-            'assets/juan.png'
+        avatar: 'assets/juan.png',
+        linkedin: 'https://www.linkedin.com/in/juan-zuluaga02'
     },
     {
         name: 'Jefferson Warie',
         role: 'MS in Computer Science and Engineering',
         content: '',
-        avatar:
-            'assets/blank-pfp.jpg'
+        avatar: 'assets/blank-pfp.jpg',
+        linkedin: 'https://www.linkedin.com/in/jefferson-warie-933a96250'
     }
 ];
 
@@ -108,108 +117,120 @@ const advisors = [
     {
         name: 'Andres Calle',
         role: 'MS Computer Science and Engineering',
-        content:
-            'I first entered SCU as a transfer student, switching my major from Biology to Computer Science. After first meeting Professor Shaghaghi in my second quarter at SCU, I would go on to work as a research assistant for him over the summer on various projects. I was brought on to the EPIC Lab due to my interest in Machine Learning, and together with a few of my peers, we began to develop computer vision software, flood monitoring systems, and flu prediction AI. Since that summer, I have completed my undergraduate degree in SCU and have moved on to pursuing my masters, working as a Research Assistant to the Bioinnovation Lab and still working very closely with the EPIC Lab.',
-        avatar:
-            'assets/andres-calle.jpg'
+        content: 'I first entered SCU as a transfer student, switching my major from Biology to Computer Science. After first meeting Professor Shaghaghi in my second quarter at SCU, I would go on to work as a research assistant for him over the summer on various projects. I was brought on to the EPIC Lab due to my interest in Machine Learning, and together with a few of my peers, we began to develop computer vision software, flood monitoring systems, and flu prediction AI. Since that summer, I have completed my undergraduate degree in SCU and have moved on to pursuing my masters, working as a Research Assistant to the Bioinnovation Lab and still working very closely with the EPIC Lab.',
+        avatar: 'assets/andres-calle.jpg',
+        linkedin: 'https://www.linkedin.com/in/acalle'
     }
 ];
 
 const pastMembers = [
     {
-        name: 'Meghan McGinnis',
-        role: 'M.S. 2020',
-        avatar: 'assets/meghan.png'
-    },
-    {
-        name: 'Yuhang Qian',
-        role: 'B.A. 2019',
-        avatar: 'assets/blank-pfp.jpg'
-    },
-    {
-        name: 'Anika Shahi',
-        role: 'B.A. 2020',
-        avatar: 'assets/anika.png'
-    },
-    {
-        name: 'Liying Liang',
-        role: 'B.S. 2021',
-        avatar: 'assets/liying.png'
-    },
-    {
-        name: 'Tanmay Wagh',
-        role: 'M.S. 2021',
-        avatar: 'assets/tanmay.png'
-    },
-    {
-        name: 'Ron Huang',
-        role: 'B.S. 2021',
-        avatar: 'assets/ron.png'
-    },
-    {
-        name: 'Yash Kamdar',
-        role: 'M.S. 2021',
-        avatar: 'assets/yash.png'
-    },
-    {
-        name: 'Yoga Ramachandran',
-        role: 'B.S. 2021',
-        avatar: 'assets/blank-pfp.jpg'
-    },
-    {
-        name: 'Bhupinder Jagwani',
-        role: 'B.S. 2021',
-        avatar: 'assets/blank-pfp.jpg'
-    },
-    {
-        name: 'Namratha Kamath',
-        role: 'B.S. 2021',
-        avatar: 'assets/namratha.png'
-    },
-    {
-        name: 'Supriya Karishetti',
-        role: 'M.S. 2021',
-        avatar: 'assets/supriya.png'
-    },
-    {
-        name: 'Jaidev Mirchandani',
-        role: 'M.S. 2022',
-        avatar: 'assets/jaidev.png'
-    },
-    {
-        name: 'George Kouretas',
-        role: 'BS Bioengineering',
-        avatar:
-            'assets/george-kouretas.jpeg'
-    },
-    {
-        name: 'Nancy Ma',
-        role: 'B.S. 2023',
-        avatar: 'assets/nancy-ma.jpeg'
-    },
-    {
-        name: 'Sreeja Malladi',
-        role: 'MS Computer Engineering',
-        avatar:
-            'assets/Sreeja_Photo.jpg'
-    },
-    {
-        name: 'Michael Castillo.',
-        role: 'BS Computer Science and Engineering',
-        avatar:
-            'assets/michael-castillo.png'
-    },
-    {
         name: 'Divya Syal',
         role: 'BS Computer Science and Engineering',
-        avatar:
-            'assets/divya.jpg'
+        avatar: 'assets/divya.jpg',
+        linkedin: 'https://www.linkedin.com/in/divyasyal'
     },
     {
         name: 'Husain Unwalla',
         role: 'MS Computer Engineering',
-        avatar:
-            'assets/Husain.jpeg'
+        avatar: 'assets/Husain.jpeg',
+        linkedin: 'https://www.linkedin.com/in/husainunwalla'
+    },
+    {
+        name: 'Michael Castillo',
+        role: 'BS Computer Science and Engineering',
+        avatar: 'assets/michael-castillo.png',
+        linkedin: 'https://www.linkedin.com/in/michaelvcastillo'
+    },
+    {
+        name: 'Sreeja Malladi',
+        role: 'MS Computer Engineering',
+        avatar: 'assets/Sreeja_Photo.jpg',
+        linkedin: 'https://www.linkedin.com/in/sreeja-malladi'
+    },
+    {
+        name: 'Nancy Ma',
+        role: 'B.S. 2023',
+        avatar: 'assets/nancy-ma.jpeg',
+        linkedin: 'https://www.linkedin.com/in/nancy-m-6b04801b0'
+    },
+    {
+        name: 'George Kouretas',
+        role: 'BS Bioengineering',
+        avatar: 'assets/george-kouretas.jpeg',
+        linkedin: 'https://www.linkedin.com/in/george-kouretas'
+    },
+    {
+        name: 'Jaidev Mirchandani',
+        role: 'M.S. 2022',
+        avatar: 'assets/jaidev.png',
+        linkedin: 'https://www.linkedin.com/in/jvmirchandani'
+    },
+    {
+        name: 'Supriya Karishetti',
+        role: 'M.S. 2021',
+        avatar: 'assets/supriya.png',
+        linkedin: 'https://www.linkedin.com/in/supriya-karishetti-084b91166'
+    },
+    {
+        name: 'Namratha Kamath',
+        role: 'B.S. 2021',
+        avatar: 'assets/namratha.png',
+        linkedin: 'https://www.linkedin.com/in/namratha-kamath-9663b9117'
+    },
+    {
+        name: 'Bhupinder Jagwani',
+        role: 'B.S. 2021',
+        avatar: 'assets/blank-pfp.jpg',
+        linkedin: ''
+    },
+    {
+        name: 'Yoga Ramachandran',
+        role: 'B.S. 2021',
+        avatar: 'assets/blank-pfp.jpg',
+        linkedin: 'https://www.linkedin.com/in/yoga-ramachandran'
+    },
+    {
+        name: 'Yash Kamdar',
+        role: 'M.S. 2021',
+        avatar: 'assets/yash.png',
+        linkedin: 'https://www.linkedin.com/in/yash-kamdar95'
+    },
+    {
+        name: 'Ron Huang',
+        role: 'B.S. 2021',
+        avatar: 'assets/ron.png',
+        linkedin: 'https://www.linkedin.com/in/ron23'
+    },
+    {
+        name: 'Tanmay Wagh',
+        role: 'M.S. 2021',
+        avatar: 'assets/tanmay.png',
+        linkedin: 'https://www.linkedin.com/in/tanmaywagh30'
+    },
+    {
+        name: 'Liying Liang',
+        role: 'B.S. 2021',
+        avatar: 'assets/liying.png',
+        linkedin: 'https://www.linkedin.com/in/liying-liang'
+    },
+    {
+        name: 'Anika Shahi',
+        role: 'B.A. 2020',
+        avatar: 'assets/anika.png',
+        linkedin: 'https://www.linkedin.com/in/anika-shahi-a5182185'
+    },
+    {
+        name: 'Yuhang Qian',
+        role: 'B.A. 2019',
+        avatar: 'assets/blank-pfp.jpg',
+        linkedin: ''
+    },
+    {
+        name: 'Meghan McGinnis',
+        role: 'M.S. 2020',
+        avatar: 'assets/meghan.png',
+        linkedin: 'https://www.linkedin.com/in/meghan-mcginnis-4b705a56'
     }
 ];
 
@@ -230,6 +251,14 @@ function createPublicationCard(publication) {
 }
 
 function createPersonCard(person) {
+    const linkedInIcon = person.linkedin ? `
+        <div class="linkedin-container">
+            <a href="${person.linkedin}" class="linkedin-link" target="_blank" rel="noopener noreferrer">
+                <img src="assets/linkedin_icon.png" alt="LinkedIn" class="linkedin-icon">
+            </a>
+        </div>
+    ` : '';
+
     return `
         <div class="person-card">
             <div class="person-info">
@@ -237,6 +266,7 @@ function createPersonCard(person) {
                 <div class="person-details">
                     <strong>${person.name}</strong> - ${person.role}
                 </div>
+                ${linkedInIcon}
             </div>
             <div class="person-avatar">
                 <img src="${person.avatar}" alt="${person.name}">

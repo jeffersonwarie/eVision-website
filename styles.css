@@ -286,6 +286,8 @@ p {
 .person-details {
     font-size: 0.875rem;
     color: #718096;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .person-details strong {
@@ -348,4 +350,24 @@ footer {
 
 .button .arrow {
     margin-left: 0.5em;
+}
+
+.linkedin-link img {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+}
+
+.linkedin-link:hover img {
+    filter: brightness(1.2);
+}
+
+.linkedin-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.linkedin-link {
+    display: inline-block;
 }
