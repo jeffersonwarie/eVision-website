@@ -296,3 +296,9 @@ function loadContent() {
 
 // Call loadContent when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadContent);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("current-year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+});
