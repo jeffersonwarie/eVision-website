@@ -20,6 +20,7 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#publications">Papers</a></li>
                 <li><a href="#team-members">Team</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
             </ul>
             <div class="logo">
                 <a href="#hero">
@@ -37,9 +38,13 @@
                     <span class="main-title">Disease<br><span class="underline">Forecasting</span></span>
                 </h1>
                 <p>
-                    In collaboration with Cepheid, Inc., this project employs Long Short-Term Memory (LSTM) neural network data science techniques to predict future influenza vectors. The eVision (Epidemic Vision) machine learning tool currently predicts the trend of influenza cases throughout the flu season with an accuracy of 90.38%, 91.43%, and 81.74% for 3, 7, and 14 weeks in advance predictions respectively.
+                    In collaboration with Cepheid, Inc., this project employs Long Short-Term Memory (LSTM) neural
+                    network data science techniques to predict future influenza vectors. The eVision (Epidemic Vision)
+                    machine learning tool currently predicts the trend of influenza cases throughout the flu season with
+                    an accuracy of 90.38%, 91.43%, and 81.74% for 3, 7, and 14 weeks in advance predictions
+                    respectively.
                 </p>
-                <a href="404.html" class="button">eVision Tool</a>
+                <a href="tool.html" class="button">eVision Tool</a>
             </div>
             <div class="hero-image">
                 <picture>
@@ -57,17 +62,17 @@
             </div>
         </section>
 
-        <section id="team-members">
-            <h2>Team Members</h2>
-            <div class="team-grid">
-                <!-- Team member cards will be dynamically inserted here -->
+        <section id="advisors">
+            <h2>Faculty Advisors</h2>
+            <div class="advisors-grid">
+                <!-- Advisor cards will be dynamically inserted here -->
             </div>
         </section>
 
-        <section id="advisors">
-            <h2>Advisors</h2>
-            <div class="advisors-grid">
-                <!-- Advisor cards will be dynamically inserted here -->
+        <section id="team-members">
+            <h2>Graduate Student Team Members</h2>
+            <div class="team-grid">
+                <!-- Team member cards will be dynamically inserted here -->
             </div>
         </section>
 
@@ -77,12 +82,61 @@
                 <!-- Past member cards will be dynamically inserted here -->
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" style="padding: 4rem 2rem; background-color: #f8f9fa; text-align: center;">
+            <h2 id="contact-heading" style="cursor: pointer;">Contact Us</h2>
+            <div id="contact-form" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+                <p>If you wish to contact us, please fill out the entire form below and press the "Send Message" button.
+                </p>
+                <form action="contactform.php" method="POST" style="max-width: 600px; margin: 0 auto;">
+                    <div style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+                        <input type="text" id="name" name="name" placeholder="Name" required
+                            style="width: 48%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px;">
+                        <input type="email" id="email" name="email" placeholder="Email" required
+                            style="width: 48%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <div class="h-captcha" data-sitekey="36f83e20-ccd4-425c-b300-a814a41c08da"></div>
+                    </div>
+                    <div>
+                        <button type="submit" name="button" value="Message" class="button"
+                            style="padding: 0.75rem 1.5rem; background-color: #4299E1; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <p>© <span id="current-year"></span> Epidemic Vision. All rights Reserved.</p>
-    </footer>    
+    </footer>
 
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script>
+        const contactSection = document.getElementById('contact-section');
+        const contactForm = document.getElementById('contact-form');
+
+        // Expand the contact form when hovering over the section
+        contactSection.addEventListener('mouseenter', () => {
+            contactForm.style.maxHeight = '1000px'; // Adjust based on form size
+        });
+
+        // Collapse the contact form when the mouse leaves the section
+        contactSection.addEventListener('mouseleave', () => {
+            contactForm.style.maxHeight = '0';
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

@@ -60,6 +60,43 @@ header {
     backdrop-filter: none;
     z-index: 99;
 }
+
+#contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact-section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+#contact-section input, #contact-section textarea {
+    font-size: 1rem;
+}
+
+#contact-section .button {
+    transition: background-color 0.3s;
+}
+
+#contact-section .button:hover {
+    background-color: #2c7bbf;
+}
+
+/* Initially hide the contact form (compressed) */
+#contact-form {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Expand the contact form when hovering over the "Contact Us" text */
+#contact-section:hover #contact-form {
+    max-height: 1000px; /* Adjust this value to suit the form content size */
+    overflow: visible;
+}
+
 /* Original settings:
 backdrop-filter: blur(25px);
 */
@@ -410,4 +447,16 @@ footer {
 
 .linkedin-link {
     display: inline-block;
+}
+
+/* Tool page specific adjustments */
+.tool-page .container {
+    margin-top: 80px;
+}
+
+/* Media query for smaller screens, if needed */
+@media (max-width: 767px) {
+    .tool-page .container {
+        margin-top: 100px;
+    }
 }
